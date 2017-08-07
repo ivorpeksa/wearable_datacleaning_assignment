@@ -1,5 +1,5 @@
-# 
-rm(df_subj_test,df_subj_train,df_X_test,df_X_train,df_y_test,df_y_train, myDF)
+# Clean up from previous runs
+#rm(df_subj_test,df_subj_train,df_X_test,df_X_train,df_y_test,df_y_train, myDF)
 
 # Read in subject data from test set subject_test.txt into temporary df
 df_subj_test <- read.table("C:/Data Science/Datascience Pack/Johns Hopkins Data Science/wk3.5/UCI HAR Dataset/test/subject_test.txt")
@@ -79,3 +79,7 @@ myAve$y <- NULL
 # This meets Objective 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 # ===========================
 head(myAve)
+
+#write out datasets to file system
+write.csv(myDF, file ="C:/Data Science/Datascience Pack/Johns Hopkins Data Science/wk3.5/wearable_datacleaning_assignment-master/combined_dataset.csv")
+write.csv(myAve, file ="C:/Data Science/Datascience Pack/Johns Hopkins Data Science/wk3.5/wearable_datacleaning_assignment-master/averages.csv")
