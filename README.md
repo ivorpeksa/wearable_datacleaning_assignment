@@ -13,7 +13,7 @@ This repo includes the following files:
 
 - 'README.md'
 
-- 'codebook.md'
+- 'CodeBook.md'
 
 - 'run_analysis.R'
 
