@@ -32,6 +32,14 @@ You should create one R script called run_analysis.R that does the following.
     4. Appropriately labels the data set with descriptive variable names.
     5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+Using the script
+================
+Use the tun_analysis.R script as follows.
+
+    1. Unpack the original dataset into "C:/Data Science/Datascience Pack/Johns Hopkins Data Science/wk3.5/UCI HAR Dataset/". The files required are: ./test/subject_test.txt, ./train/subject_train.txt, ./test/X_test.txt, ./train/X_train.txt, ./test/y_test.txt, ./train/y_train.txt, ./features.txt, ./activity_labels.txt
+    2. Run the run_analysis.R script in RStudio or equaivalent.
+    3. The script will output ./averages.txt
+
 *The following information is from the original README.txt included in the dataset above*
 
 Notes: 
